@@ -1,10 +1,11 @@
 import React from 'react';
-import Counter from '../src/components/Counter';
+import { BearCounter, Controls } from '../src/components/Bear'; // Doğru içe aktarma
 
 function App() {
   return (
     <div className="App">
-      <Counter />
+      <BearCounter />
+      <Controls />
     </div>
   );
 }

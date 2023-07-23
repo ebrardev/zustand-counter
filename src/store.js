@@ -1,10 +1,11 @@
 
-import create from 'zustand';
+import { create } from 'zustand'
 
-const useStore = create((set) => ({
-  count: 0,
-  increment: () => set((state) => ({ count: state.count + 1 })),
-  decrement: () => set((state) => ({ count: state.count - 1 })),
-}));
+const useBearStore = create((set) => ({
+  bears: 0,
+  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
+  decreasePopulation: () => set((state) => ({ bears: state.bears - 1 })),
+  removeAllBears: () => set({ bears: 0 }),
+}))
 
-export default useStore;
+export default useBearStore
