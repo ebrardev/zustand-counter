@@ -1,11 +1,11 @@
 import React from 'react';
-import { BearCounter, Controls } from '../src/components/Bear'; // Doğru içe aktarma
+import  Bear from '../src/components/Bear'; // Doğru içe aktarma
 
 function App() {
   return (
     <div className="App">
-      <BearCounter />
-      <Controls />
+      <Bear />
+     
     </div>
   );
 }

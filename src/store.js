@@ -1,11 +1,9 @@
-
-import { create } from 'zustand'
+import create from 'zustand';
 
 const useBearStore = create((set) => ({
   bears: 0,
-  increasePopulation: () => set((state) => ({ bears: state.bears + 1 })),
-  decreasePopulation: () => set((state) => ({ bears: state.bears - 1 })),
-  removeAllBears: () => set({ bears: 0 }),
-}))
+  increment: (value) => set((state) => ({ bears: state.bears + value })),
+  decrement: (value) => set((state) => ({ bears: state.bears - value })),
+}));
 
-export default useBearStore
+export default useBearStore;
